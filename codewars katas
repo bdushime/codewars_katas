@@ -53,6 +53,29 @@ The highest profit wins!
   return c.charCodeAt(0);
 }
 
+Find the capitals
+
+    answer:
+
+
+var capitals = function (word) {
+
+   let word1=word;
+  let word2=[];
+  
+  for(let i=0;i<word1.length;i++){
+    if(word1.charCodeAt(i) >= 65 && word1.charCodeAt(i) <97){
+      word2.push(i);
+    }
+  }
+  
+  return word2;
+  
+};
+
+
+    
+
 
 
 

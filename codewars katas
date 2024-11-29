@@ -1,0 +1,59 @@
+codewars katas:
+
+Is there a vowel in there?:
+ answer:
+      function isVow(s){
+
+    let arr=s
+    let newArr=[];
+    
+    for(let i=0;i<arr.length;i++){
+        if(String.fromCharCode(arr[i]) === 'a' || String.fromCharCode(arr[i]) === 'e' || String.fromCharCode(arr[i]) === 'i' || String.fromCharCode(arr[i]) === 'o' || String.fromCharCode(arr[i])=== 'u'){
+            newArr.push(String.fromCharCode(arr[i]));
+        }else{
+          newArr.push(arr[i])
+        }
+    }
+    return newArr;
+    
+}
+
+
+Sum of Cubes:
+
+ answer:
+
+    function sumCubes(n){
+  let sum = 0;
+  
+  for(let i=0;i<=n;i++){
+    sum +=i*i*i;
+  }
+  
+  return sum
+}
+
+
+The highest profit wins!
+
+   answer:
+       function minMax(arr){
+    arr1= arr.sort((a,b)=>a-b);
+    
+    return [arr1[0],arr1[arr1.length-1]];
+}
+
+
+ get ascii value of character
+
+   answer:
+
+       function getASCII(c){
+  // ...
+  return c.charCodeAt(0);
+}
+
+
+
+
+

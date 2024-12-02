@@ -125,6 +125,42 @@ function findDigit(num, nth = 0) {
   return digit;
 }
 
+
+function findDigit(num, nth = 0) {
+  let n = Math.abs(num);
+  
+  if (nth === 0 || nth.toString().includes('-')) {
+    return -1;
+  }
+  
+   let totalDigits = Math.floor(Math.log10(n)) + 1;
+    if(nth >totalDigits){
+        return 0;
+    }
+  
+  
+  let digits = 0;
+  let currentD = 0;
+  let target = -1;
+  
+   
+  while (n > 0) {
+    digits = n % 10;
+    
+    if (currentD === nth - 1) {
+      target = digits;
+      break;  
+    }
+    
+    n = Math.floor(n / 10);
+    currentD++;
+  }
+  
+  return target;
+}
+
+
+console.log(findDigit(-456,4));
     
 
 

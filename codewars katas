@@ -165,7 +165,20 @@ function findDigit(num, nth = 0) {
 
 
 console.log(findDigit(-456,4));
+
+
+Gravity flip
+  answer:
+
+const flip=(d, a)=>{ 
+    if(d ==='R'){
+      return a.sort((a,b)=>(a-b));
+    }
+    else if(d ==='L'){
+           return a.sort((a, b) =>(b-a));
+    }
     
+}
 
 
 

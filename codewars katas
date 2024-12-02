@@ -100,7 +100,30 @@ function sumDigits(number) {
   return sum;
 }
 
+function findDigit(num, nth = 0) {
 
+ let n=Math.abs(num);
+  let digit=0
+  let arr=n.toString().split('').map(element=>Number(element));
+  
+  if(nth > arr.length ){
+      return 0;
+  }else if(nth.toString().includes('-') || nth === 0){
+      return -1;
+  }
+  
+  for(let i=arr.reverse().length -1;i>=0;i--){
+      if(nth -1 === i){
+          digit =arr[i];
+      }
+  }
+ 
+  
+  
+  
+  
+  return digit;
+}
 
     
 

@@ -44,6 +44,10 @@ The highest profit wins!
 }
 
 
+
+
+
+
  get ascii value of character
 
    answer:
@@ -180,7 +184,12 @@ const flip=(d, a)=>{
     
 }
 
+Is the string uppercase?
 
+answer:
+  String.prototype.isUpperCase = function() {
+  return this.split('').every((element)=>element.toUpperCase() === element);
+  }
 
 
 

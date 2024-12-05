@@ -45,6 +45,44 @@ The highest profit wins!
 
 
 
+Balanced Number (Special Numbers Series #1 )
+
+answer:
+    function balancedNum(number) {
+    let array = number.toString().split('').map(element => Number(element));
+    let length = array.length;
+    let middleNumber = Math.floor(length / 2);
+    let sum1 = 0;
+    let sum2 = 0;
+    
+    if(length <=1){
+    return "Balanced";
+  }
+
+    if (length % 2 === 0) {
+        for (let i = 0; i < middleNumber - 1; i++) {
+            sum1 += array[i];
+        }
+        
+        for (let i = middleNumber + 1; i < length; i++) {
+            sum2 += array[i];
+        }
+    } else {
+        for (let i = 0; i < middleNumber; i++) {
+            sum1 += array[i];
+        }
+        
+        for (let i = middleNumber + 1; i < length; i++) { 
+            sum2 += array[i];
+        }
+    }
+    
+    return sum1 === sum2 ? "Balanced" : "Not Balanced";
+}
+
+console.log(balancedNum(959));
+
+
 
 
 

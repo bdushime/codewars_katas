@@ -230,4 +230,14 @@ answer:
   }
 
 
+Sort array by string length
+
+   answer:
+
+     function sortByLength (array) {
+  
+  
+       return array.sort((a,b)=>a.length-b.length);
+}
+
 

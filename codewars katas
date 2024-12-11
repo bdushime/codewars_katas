@@ -291,7 +291,22 @@ Reverse the bits in an integer
 }
 
 
+Cat and Mouse - Easy Version
 
+   answer:
+
+
+        function catMouse(x){
+            let length=x.length -2;
+
+               if(length <=3){
+                    return 'Caught!';
+                     }
+             else{
+                  return 'Escaped!';
+                }
+
+}
 
 
 

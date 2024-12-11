@@ -280,6 +280,16 @@ answer:
 }
 
 
+Reverse the bits in an integer
+
+   answer:
+
+      function reverseBits (n) {
+  const bin= n.toString(2).split('').reverse().join('');
+  
+  return parseInt(bin,2);
+}
+
 
 
 

@@ -45,6 +45,9 @@ The highest profit wins!
 
 
 
+
+
+
 Balanced Number (Special Numbers Series #1 )
 
 answer:
@@ -325,7 +328,36 @@ Inspiring Strings
 }
 
 
+Throwing Darts
 
+
+  answer:
+
+        function scoreThrows(radii) {
+  // Handle empty array case
+  if (radii.length === 0) return 0;
+  
+  // Map radii to their corresponding points
+  let scores = radii.map((radius) => {
+    if (radius > 10) {
+      return 0;
+    } else if (radius <= 10 && radius >= 5) {
+      return 5;
+    } else {
+      return 10;
+    }
+  });
+  
+  // Calculate total score
+  let totalScore = scores.reduce((sum, score) => sum + score, 0);
+  
+  let allLessThanFive = radii.every(radius => radius < 5);
+  if (allLessThanFive) {
+    totalScore += 100;
+  }
+  
+  return totalScore;
+}
 
 
 

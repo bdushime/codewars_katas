@@ -309,5 +309,25 @@ Cat and Mouse - Easy Version
 }
 
 
+Inspiring Strings
+
+  answer:
+
+        function longestWord(stringOfWords) {
+  // Split the input into an array of words
+  const words = stringOfWords.split(' ');
+
+  const maxLength = Math.max(...words.map(word => word.length));
+
+  const longestWords = words.filter(word => word.length === maxLength);
+
+  return longestWords[longestWords.length - 1];
+}
+
+
+
+
+
+
 
 

@@ -384,6 +384,31 @@ Find Nearest square number
 }
 
 
+Numericals of a String
+   answer:
+
+      function numericals(s){
+  // Object to track character occurrences
+    const charCount = {};
+    
+    // Use map to transform the string
+    return s
+        .split('')
+        .map(char => {
+            // If character hasn't been seen before
+            if (charCount[char] === undefined) {
+                charCount[char] = 1;
+                return '1';
+            }
+            
+            // Increment and return the occurrence count
+            charCount[char]++;
+            return charCount[char].toString();
+        })
+        .join('');
+    
+}
+
 
 
 

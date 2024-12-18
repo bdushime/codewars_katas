@@ -360,6 +360,33 @@ Throwing Darts
 }
 
 
+Find Nearest square number
+
+   answer:
+
+
+        function nearestSq(n) {
+    if (n < 0) {
+        throw new Error("Input must be a positive integer.");
+    }
+    
+    const lowerRoot = Math.floor(Math.sqrt(n)); 
+    const higherRoot = Math.ceil(Math.sqrt(n)); 
+    
+    const lowerSquare = lowerRoot * lowerRoot;
+    const higherSquare = higherRoot * higherRoot; 
+    
+    if (Math.abs(n - lowerSquare) <= Math.abs(n - higherSquare)) {
+        return lowerSquare;
+    } else {
+        return higherSquare;
+    }
+}
+
+
+
+
+
 
 
 

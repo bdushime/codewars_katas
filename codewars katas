@@ -410,6 +410,37 @@ Numericals of a String
 }
 
 
+flip the digit in bits:
+
+   answer: 
+         function binaryOp(number, v) {
+    let nb = number.toString(2); // Convert the number to binary string
+
+    // Ensure v is within bounds
+    if (v < 1 || v > nb.length) {
+        throw new Error("Invalid position v");
+    }
+
+    // Convert the string to an array for easier manipulation
+    let binaryArray = nb.split('');
+
+    // Index in the array is v-1 (since v is 1-based)
+    let index = nb.length - v; // Adjust for binary order (from right to left)
+
+    // Toggle the bit at the specified index
+    binaryArray[index] = binaryArray[index] === '1' ? '0' : '1';
+
+    // Convert back to string and then to integer
+    let modifiedBinary = binaryArray.join('');
+    return parseInt(modifiedBinary, 2);
+}
+
+// Test cases
+console.log(binaryOp(15, 4)); // Output: 7
+console.log(binaryOp(0, 1));  // Output: 1
+console.log(binaryOp(15, 1)); // Output: 14
+
+
 
 
 

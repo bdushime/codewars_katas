@@ -441,6 +441,13 @@ console.log(binaryOp(0, 1));  // Output: 1
 console.log(binaryOp(15, 1)); // Output: 14
 
 
+String subpattern recognition I
+ answer:
+    function hasSubpattern(string){
+let str= string + string;
+let trimmed = str.slice(1,-1);
+return trimmed.includes(string);
+}
 
 
 

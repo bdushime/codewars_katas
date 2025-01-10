@@ -1,5 +1,22 @@
 codewars katas:
 
+Coding Meetup #17 - Higher-Order Functions Series - Sort by programming language
+  answer:
+       function sortByLanguage(list) {
+   return list.sort((a,b) => {
+       if(a.language === b.language){
+           return a.firstName.localeCompare(b.firstName);
+       }
+       
+       return a.language.localeCompare(b.language);
+       
+   });
+  
+}
+
+
+
+
 Is there a vowel in there?:
  answer:
       function isVow(s){

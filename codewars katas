@@ -1,6 +1,23 @@
 codewars katas:
 
 
+Coding Meetup #7 - Higher-Order Functions Series - Find the most senior developer
+
+
+    function findSenior(list) {
+  let list1= list.sort((a,b)=>b.age -a.age);
+  let maxAge=list1[0].age;
+  
+  return list1.filter(obj=>obj.age === maxAge);
+
+ 
+}
+
+
+
+
+
+
 Coding Meetup #8 - Higher-Order Functions Series - Will all continents be represented?
 
    function allContinents(list) {

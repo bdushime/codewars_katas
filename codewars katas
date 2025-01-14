@@ -9,6 +9,17 @@ Coding Meetup #8 - Higher-Order Functions Series - Will all continents be repres
 
 
 
+Sum Strings as Numbers
+
+     function sumStrings(a,b) { 
+ let s1=BigInt(a);
+ let s2=BigInt(b);
+  
+ let sum=s1+s2;
+  
+  return String(sum);
+ 
+}
 
 
 

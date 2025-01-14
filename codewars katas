@@ -1,5 +1,22 @@
 codewars katas:
 
+
+Coding Meetup #8 - Higher-Order Functions Series - Will all continents be represented?
+
+   function allContinents(list) {
+  return ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'].every(x => list.some(y => x==y.continent));
+}
+
+
+
+
+
+
+
+
+
+
+
 Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
 
 function isRubyComing(list) {

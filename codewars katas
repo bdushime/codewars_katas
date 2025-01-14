@@ -7,6 +7,27 @@ Coding Meetup #8 - Higher-Order Functions Series - Will all continents be repres
   return ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'].every(x => list.some(y => x==y.continent));
 }
 
+Coding Meetup #4 - Higher-Order Functions Series - Find the first Python developer
+
+     function getFirstPython(list) {
+  // Thank you for checking out my kata :)
+  let obj=[];
+  let available=false;
+  for(let i=0;i<list.length;i++){
+    if(list[i].language === 'Python'){
+      available=true;
+       obj.push(`${list[i].firstName}, ${list[i].country}`);
+    }
+  }
+  return available? String(obj[0]) : "There will be no Python developers";
+}
+
+
+
+
+
+
+
 
 
 Sum Strings as Numbers

@@ -1,5 +1,23 @@
 codewars katas:
 
+Sum Strings as Numbers
+
+
+   answer:
+        function sumStrings(a,b) { 
+ let s1=BigInt(a);
+ let s2=BigInt(b);
+  
+ let sum=s1+s2;
+  
+  return String(sum);
+ 
+}
+
+
+
+
+
 Coding Meetup #9 - Higher-Order Functions Series - Is the meetup age-diverse?
 
  answer:

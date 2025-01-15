@@ -1,5 +1,41 @@
 codewars katas:
 
+Coding Meetup #9 - Higher-Order Functions Series - Is the meetup age-diverse?
+
+ answer:
+        function isAgeDiverse(list) {
+  let teens = false;     
+  let twenties = false;  
+  let thirties = false; 
+  let forties = false;   
+  let fifties = false;   
+  let sixties = false;   
+  let seventies = false; 
+  let eighties = false;  
+  let nineties = false;  
+  let hundreds = false;  
+  
+  for (let person of list) {
+    const age = person.age;
+    
+    if (age >= 10 && age < 20) teens = true;
+    else if (age >= 20 && age < 30) twenties = true;
+    else if (age >= 30 && age < 40) thirties = true;
+    else if (age >= 40 && age < 50) forties = true;
+    else if (age >= 50 && age < 60) fifties = true;
+    else if (age >= 60 && age < 70) sixties = true;
+    else if (age >= 70 && age < 80) seventies = true;
+    else if (age >= 80 && age < 90) eighties = true;
+    else if (age >= 90 && age < 100) nineties = true;
+    else if (age >= 100) hundreds = true;
+  }
+
+  return teens && twenties && thirties && forties && 
+         fifties && sixties && seventies && eighties && 
+         nineties && hundreds;
+}
+     
+
 
 Coding Meetup #7 - Higher-Order Functions Series - Find the most senior developer
 

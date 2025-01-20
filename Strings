@@ -1,0 +1,10 @@
+Proof Read
+  step 1 :
+
+        function proofread (str) { 
+let str2=str.toLowerCase().replace(/ie/gi,'ei');
+ str2=str2.split('. ').map(sentence => sentence[0].toUpperCase() + sentence.slice(1)).join('. ');
+  return str2;
+
+} 
+   

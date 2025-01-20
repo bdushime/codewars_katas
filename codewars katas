@@ -1,5 +1,31 @@
 codewars katas:
 
+Normalizing Out of Range Array Indexes
+
+    answer:
+
+        function normIndex(array, index){
+
+  if(array.length <= 0){
+    return undefined;
+  }
+  
+  index =((index % array.length)+ array.length)%array.length;
+  
+  return array[index];
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
 Sum Strings as Numbers
 
 

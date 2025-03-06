@@ -1,3 +1,21 @@
+Run your String
+
+   answer:
+
+        function runYourString (arg, obj) {
+  const funct= new Function(obj.param,obj.func);
+  return funct(arg);
+}
+
+
+
+
+
+
+
+
+
+
 Proof Read
   step 1 :
 

@@ -1,5 +1,23 @@
 codewars katas:
 
+
+Surface Area and Volume of a Box
+
+   answer:
+
+
+       function getSize(width, height, depth){
+   let surfaceArea = 2 * (width * height + width * depth + height * depth);
+    let volume = width * height * depth;
+    return [surfaceArea, volume];
+}
+
+
+
+
+
+
+
 Normalizing Out of Range Array Indexes
 
     answer:

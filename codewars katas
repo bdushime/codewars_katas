@@ -1,6 +1,31 @@
 codewars katas:
 
 
+Multiples of 3 and 5 redux
+
+   answer:
+
+
+       function solution(number){
+  // ...
+ function sumDivisibleBy(k) {
+        let m = Math.floor((number - 1) / k); 
+        return k * (m * (m + 1)) / 2;
+    }
+
+    return sumDivisibleBy(3) + sumDivisibleBy(5) - sumDivisibleBy(15);
+}
+
+
+
+
+
+
+
+
+
+
+
 Surface Area and Volume of a Box
 
    answer:

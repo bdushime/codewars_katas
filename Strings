@@ -1,3 +1,32 @@
+Are we alternate?
+
+
+
+    answer:
+
+         function isAlt(word) {
+    let vowel=['a','e','i','o','u']
+  for(let i=0;i<word.length-1;i++){
+      if(vowel.includes(word[i]) && vowel.includes(word[i+1])){
+          return false;
+      }
+    
+     if(!vowel.includes(word[i]) && !vowel.includes(word[i+1])){
+          return false;
+      }   
+  }
+  
+  return true;
+}
+
+
+
+
+
+
+
+
+
 Run your String
 
    answer:

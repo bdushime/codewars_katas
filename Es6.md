@@ -15,4 +15,24 @@ Find twins:
 
 2nd way:
 
+function elimination(arr){
+  //write your code here 
+  let obj={};
+  
+  for(let item of arr){
+    obj[item]=(obj[item] || 0) + 1;
+  }
+  
+  let max=null;
+  for(let key in obj){
+      if(obj[key] > 1){
+        max=Number(key);
+      }
+  
+     
+  }
+  
+  return max;
+}
+
       

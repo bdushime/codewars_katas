@@ -1,6 +1,14 @@
 codewars katas:
 
 
+Recursive Replication
+
+ function replicate(times, number) {
+	if (times < 0) return [];
+  
+  return new Array(times).fill(number);
+}
+
 
 
 

@@ -1,5 +1,27 @@
 codewars katas:
 
+Who is the killer?
+
+   function killer(suspectInfo, dead) {
+  for (let suspect in suspectInfo) {
+    if (dead.every(person => suspectInfo[suspect].includes(person))) {
+      return suspect;
+    }
+  }
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
 For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
 
   function quote(fighter) {

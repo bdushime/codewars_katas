@@ -1,5 +1,38 @@
 codewars katas:
 
+Working with Dictionaries
+
+
+function infDatabase(range_, str_, val) {
+    const [a, b] = range_;
+    const validConditions = {
+        "equals to": (x) => x === val,
+        "higher than": (x) => x > val,
+        "lower than": (x) => x < val,
+        "higher and equals to": (x) => x >= val,
+        "lower and equals to": (x) => x <= val
+    };
+
+    if (!validConditions[str_]) return "wrong constraint";
+
+    let numbers = [];
+    
+    for (let i = a; i <= b; i++) {
+        if (validConditions[str_](A001055[i])) {
+            numbers.push(i);
+        }
+    }
+
+    return [numbers.length, numbers];
+}
+
+
+
+
+
+
+
+
 Who is the killer?
 
    function killer(suspectInfo, dead) {

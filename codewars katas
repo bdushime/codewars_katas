@@ -1,7 +1,29 @@
 codewars katas:
 
 
-IndexOf Array in AArray
+Remove exclamation marks
+
+  function removeExclamationMarks(s) {
+  let s1='';
+  for(let i=0;i<=s.length-1;i++){
+    if(s[i] !== '!'){
+      s1 +=s[i];
+    }
+  }
+  return s1;
+}
+
+
+
+
+
+
+
+
+
+
+
+IndexOf Array in Array
 
 
 

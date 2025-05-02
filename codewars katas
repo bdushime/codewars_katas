@@ -1,6 +1,20 @@
 codewars katas:
 
 
+Who is the killer?
+
+
+  function killer(suspectInfo, dead) {
+ for(let suspect in suspectInfo){
+   if(dead.every(person =>suspectInfo[suspect].includes(person))){
+     return suspect;
+   }
+ }
+}
+
+
+
+
 Remove exclamation marks
 
   function removeExclamationMarks(s) {

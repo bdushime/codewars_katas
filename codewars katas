@@ -1,5 +1,18 @@
 codewars katas:
 
+Inverting a Hash
+
+  function invertHash(hash) {
+  let obj={};
+  let entries=Object.entries(hash);
+  
+  for(let [key,value] of entries){
+      obj[value]=key
+  }
+  
+  return obj;
+}
+
 
 Who is the killer?
 

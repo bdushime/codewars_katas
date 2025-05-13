@@ -1,5 +1,25 @@
 codewars katas:
 
+Convert string to camel case
+
+   function toCamelCase(str){
+  let str1='';
+  for(let i=0;i<=str.length-1;i++){
+    if(str[i]==="_" || str[i]==="-"){
+      i++;
+      str1+=str[i].toUpperCase();
+     
+    }else{
+      str1 +=str[i];
+    }
+  }
+  
+  return str1;
+  
+}
+
+   
+
 Inverting a Hash
 
   function invertHash(hash) {

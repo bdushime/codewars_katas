@@ -1,7 +1,7 @@
 Help Bob count letters and digits.
 
   answer:
-        function countLettersAndDigits(input) {
+        function coutLettersAndDigits(input) {
    let count=0
    let regex=/[a-zA-Z0-9]/;
   

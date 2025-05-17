@@ -10,7 +10,7 @@ Convert string to camel case
       str1+=str[i].toUpperCase();
      
     }else{
-      str1 +=str[i];
+      str1 += str[i];
     }
   }
   

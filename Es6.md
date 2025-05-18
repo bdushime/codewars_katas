@@ -1,4 +1,4 @@
-Find twins:
+Find twwins:
 
 1st way:
        function elimination(arr){

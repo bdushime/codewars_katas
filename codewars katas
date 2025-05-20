@@ -1,5 +1,33 @@
 codewarss katas:
 
+Coding Meetup #16 - Higher-Order Functions Series - Ask for missing details
+
+    function askForMissingDetails(list) {
+  const nullProperties = [];
+  const list2= [];
+ for(let i=0;i<=list.length-1;i++){
+   const currentItem = list[i];
+    const nullPropsInThisItem = [];
+    
+    for(const key in currentItem){
+        if(currentItem.hasOwnProperty(key) && currentItem[key] === null){
+            nullProperties.push(key);
+            currentItem.question=`Hi, could you please provide your ${key}.`;
+            list2.push(currentItem);
+        }
+        
+        
+    }
+  
+ }
+ 
+  return list2;
+  
+}
+
+
+
+
 Convert string to camel case
 
    function toCamelCase(str){

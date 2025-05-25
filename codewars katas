@@ -2,7 +2,7 @@ codewarss katas:
 
 Coding Meetup #16 - Higher-Order Functions Series - Ask for missing details
 
-    function aaskForMissingDetails(list) {
+    function askForMissingDetails(list) {
   const nullProperties = [];
   const list2= [];
  for(let i=0;i<=list.length-1;i++){

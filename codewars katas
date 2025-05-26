@@ -23,6 +23,14 @@ Coding Meetup #10 - Higher-Order Functions Series - Create usernames
 
 
 
+function addUsername(list) {
+  return list.map(function(x){
+      x.username =x.firstName.toLowerCase() + x.lastName[0].toLowerCase() +(date =new Date().getFullYear() - x.age);
+      return x;})
+}
+
+
+
 
 
 

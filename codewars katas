@@ -1,5 +1,34 @@
 codewarss katas:
 
+Coding Meetup #10 - Higher-Order Functions Series - Create usernames
+
+   function addUsername(list){
+    for(let i=0;i<=list.length-1;i++){
+        if(list[i].hasOwnProperty('username')=== false){
+            let str=list[i].firstName.toLowerCase();
+            let str0=list[i].lastName[0].toLowerCase();
+            let str1=str + str0;
+            const date = new Date();
+            const age =list[i].age;
+            const year = date.getFullYear();
+            let str2=year - age ;
+            list[i].username= str1 + str2;
+            
+        }
+
+    }
+    
+    return list;
+}
+
+
+
+
+
+
+
+
+
 Coding Meetup #16 - Higher-Order Functions Series - Ask for missing details
 
     function askForMissingDetails(list) {

@@ -1,5 +1,9 @@
 codewarss katas:
 
+Count of positives / sum of negatives
+
+
+
 Welcome to the City(Typescript)
   export const sayHello = (name: string[], city: string, state: string):string => {
   return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;

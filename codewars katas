@@ -1,5 +1,13 @@
 codewarss katas:
 
+Welcome to the City
+  export const sayHello = (name: string[], city: string, state: string):string => {
+  return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
+}
+
+
+
+
 Coding Meetup #10 - Higher-Order Functions Series - Create usernames
 
    function addUsername(list){

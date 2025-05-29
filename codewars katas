@@ -1,6 +1,6 @@
 codewarss katas:
 
-Count of positives / sum of negatives
+Count of positives / sum of negatives(Typescript)
 
  
 export function countPositivesSumNegatives(input: number[] | null): number[] {

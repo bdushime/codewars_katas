@@ -1,6 +1,21 @@
 codewars katas:
 
 
+How good are you really?
+
+    export function betterThanAverage(classPoints: number[], yourPoints: number) : boolean {
+ let avg= classPoints.reduce((acc,curr)=>acc+curr,0)/classPoints.length;
+
+    if(avg > yourPoints){
+     return false;
+     }
+
+  return true;
+}
+
+
+
+
 Multiply:
 
     export function multiply(a: number, b: number): number {

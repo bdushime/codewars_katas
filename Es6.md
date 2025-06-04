@@ -1,4 +1,6 @@
-function digitalRoot(n: number): number {
+export const digitalRoot = (n:number):number => {
+
+
 
 }
 

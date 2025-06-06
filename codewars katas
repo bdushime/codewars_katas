@@ -1,6 +1,11 @@
 codewars katas:
 
 
+Sum of Digits / Digital Root
+
+  
+
+
 How good are you really?
 
     export function betterThanAverage(classPoints: number[], yourPoints: number) : boolean {

@@ -4,7 +4,7 @@ Sort and Star
    answer: 
 export function twoSort(s: string[]): string {
     let str = s.sort();
-  return str[0].split('').join('***');
+  return str[0].split('').join('****');
 }
        
 

@@ -12,7 +12,7 @@ export function countBits(n: number): number {
           count++;
        }
     }
-    return count
+   
     
   }
   }

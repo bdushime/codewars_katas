@@ -1,5 +1,19 @@
 codewars katas:
 
+export function countBits(n: number): number {
+   
+    
+  }
+
+
+
+
+
+
+
+
+
+
 How good are you really?
 
   export function betterThanAverage(classPoints: number[], yourPoints: number) : boolean {

@@ -11,7 +11,10 @@ export function countBits(n: number): number {
        if(bin[i] === '1'){
           count++;
        }
+    }
+    return count
     
+  }
     
   }
   }

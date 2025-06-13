@@ -10,10 +10,9 @@ export function countBits(n: number): number {
           count++;
        }
     }
-    return 
+    return count
     
   }
-
 
 
 

@@ -1,6 +1,6 @@
 codewars katas:
 
-export function countBits(n: number): number {
+export function countBiits(n: number): number {
     // Program Me
     let bin:string= n.toString(2);
     let count:number=0;

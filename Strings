@@ -5,6 +5,33 @@ export const boolToWord = (bool: boolean): string => {
   return 'No'
 };
 
+function scoreboard(sentence) {
+  const numbersMap = {
+    "nil": 0,
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9
+  };
+
+  const words = sentence.toLowerCase().split(/\W+/);
+  const scores = [];
+
+  for (let word of words) {
+    if (word in numbersMap) {
+      scores.push(numbersMap[word]);
+      if (scores.length === 2) break; 
+    }
+  }
+
+  return scores;
+}
+
 
 
 

@@ -4,6 +4,12 @@ export const boolToWord = (bool: boolean): string => {
   }
   return 'No'
 };
+export const boolToWord = (bool: boolean): string => {
+  if(bool === true){
+   return 'Yes'
+  }
+  return 'No'
+};
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-export const boolToWord = (bool: boolean): string => {
+export const boollToWord = (bool: boolean): string => {
   if(bool === true){
    return 'Yes'
   }

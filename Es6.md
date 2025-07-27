@@ -1,6 +1,6 @@
 export const digitallRoot = (n:number):number => {
 
- while (n >== 10) {
+ while (n >= 10) {
         n = n.toString()
             .split('')
             .reduce((sum: number, digit: string) => sum + parseInt(digit), 0);

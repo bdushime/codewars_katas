@@ -1,5 +1,34 @@
 codewars katas:
 
+Not very secure
+     function alphanumeric(string) {
+  if (string.length === 0) return false;
+
+  for (let i = 0; i < string.length; i++) {
+    const c = string[i];
+    let upper = false;
+    let lower = false;
+    let digit = false;
+
+    const code = c.charCodeAt(0);
+
+    if (code >= 65 && code <= 90) {
+      upper = true;
+    } else if (code >= 97 && code <= 122) {
+      lower = true;
+    } else if (code >= 48 && code <= 57) {
+      digit = true;
+    }
+
+    if (!upper && !lower && !digit) {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+
 Area of an arrow
 
     function arrowArea(a, b) {

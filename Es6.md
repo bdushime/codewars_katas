@@ -1,4 +1,4 @@
-export const digitallRoot = (n:number):number => {
+export const digitalRoot = (n:number):number => {
 
  while (n >= 10) {
         n = n.toString()

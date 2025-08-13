@@ -1,3 +1,40 @@
+
+Did someone say cake?
+
+   function cake(ingredient, amount) {
+  const recipe = {
+    'caster sugar': { amount: 160, unit: 'g' },
+    butter: { amount: 170, unit: 'g' },
+    eggs: { amount: 3, unit: '' }, 
+    'self-raising flour': { amount: 115, unit: 'g' },
+    'cocoa powder': { amount: 55, unit: 'g' }
+  };
+
+  const factor = amount / recipe[ingredient].amount;
+
+  const adjusted = {};
+  for (let key in recipe) {
+    let newAmount = recipe[key].amount * factor;
+    
+    newAmount = Math.round(newAmount * 10) / 10;
+    adjusted[key] = recipe[key].unit ? `${newAmount}${recipe[key].unit}` : newAmount;
+  }
+
+  return adjusted;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const digitalRoot = (n:number):number => {
 
  while (n >= 10) {

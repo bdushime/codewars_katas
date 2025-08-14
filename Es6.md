@@ -1,4 +1,18 @@
 
+How many socks for a pair?
+
+  function socks(colours,pairs) {
+   if (pairs === 0) return 0;
+    return 2 * pairs + (colours - 1);
+}
+
+
+
+
+
+
+
+
 Did someone say cake?
 
    function cake(ingredient, amount) {

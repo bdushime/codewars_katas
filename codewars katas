@@ -1,6 +1,15 @@
 
 codewars katas:
 
+How many socks for a pair?
+
+function socks(colours,pairs) {
+   if (pairs === 0) return 0;
+    return 2 * pairs + (colours - 1);
+}
+
+
+
 Pairs of integers from 0 to n
 
  function generatePairs(n) {

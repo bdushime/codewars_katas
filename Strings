@@ -1,5 +1,21 @@
-Not very secure
+Detect Pangram
 
+  export const isPangram = (phrase: string): boolean => {
+  
+  let st2= new Set();
+  
+   let phrase1 = phrase.toLowerCase();
+   
+    for(const char of phrase1){
+        
+        const charCode = char.charCodeAt(0);
+         if (charCode >= 97 && charCode <= 122) {
+      st2.add(char);
+    }
+    }
+    
+    return st2.size === 26;
+}
 
    function alphanumeric(string) {
   if (string.length === 0) return false;

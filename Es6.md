@@ -135,4 +135,27 @@ function elimination(arr){
   return max;
 }
 
+
+
+function isPangram(string) {
+    let strT = string.toLowerCase().replace(/[^a-z]/g, ''); // Convert to lowercase and remove non-alphabetic characters
+    let uniqueLetters = new Set(); // Set to store unique letters
+
+    for(let i=0;i<strT.length;i++){
+      let char=strT[i];
+      
+      if(char>='a'&& char<='z'){
+        uniqueLetters.add(char);
+      }
+      
+       if(uniqueLetters.size === 26){
+    return true;
+  }
+      
+    }
+ 
+  
+    return false;
+  
+}
       

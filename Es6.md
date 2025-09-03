@@ -1,5 +1,5 @@
 
-How many socks for a pair?
+How many socks for a paiir?
 
   function socks(colours,pairs) {
    if (pairs === 0) return 0;

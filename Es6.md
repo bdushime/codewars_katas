@@ -1,4 +1,19 @@
 
+List Filtering
+
+ function filter_list(l) {
+  
+  return l.filter(item=> typeof item === 'number')
+  
+}
+
+
+
+
+
+
+
+
 How many socks for a pair?
 
   function socks(colours,pairs) {

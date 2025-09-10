@@ -1,4 +1,34 @@
 
+Find Maximum and Minimum Values of a List
+
+  var min = function(list) {
+  let smallest = list[0];
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] < smallest) {
+      smallest = list[i];
+    }
+  }
+  return smallest;
+}
+
+var max = function(list) {
+  let largest = list[0];
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] > largest) {
+      largest = list[i];
+    }
+  }
+  return largest;
+}
+
+
+
+
+
+
+
+
+
 Is a number prime?
 
    function isPrime(num) {

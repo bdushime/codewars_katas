@@ -1,6 +1,18 @@
 
 codewars katas:
 
+Array.diff
+
+    function arrayDiff(a, b) {
+  return a.filter(item => !b.includes(item));
+}
+
+
+
+
+
+
+
 Smallest value of an array
 
    function min(arr, toReturn) { 

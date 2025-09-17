@@ -1,4 +1,22 @@
 
+Smallest value of an array
+
+  function min(arr, toReturn) { 
+   let minValue = Math.min(...arr);
+
+  let minIndex = arr.indexOf(minValue);
+
+  if (toReturn === "value") {
+    return minValue;
+  } else if (toReturn === "index") {
+    return minIndex;
+  } else {
+    return null; 
+  }
+}
+
+
+
 
 Homogenous arrays
 

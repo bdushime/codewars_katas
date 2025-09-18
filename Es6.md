@@ -1,4 +1,11 @@
 
+No Loops 1 - Small enough?
+
+function smallEnough(a, limit){
+    return a.every(num=> num <=limit)
+}
+
+
 Smallest value of an array
 
   function min(arr, toReturn) { 

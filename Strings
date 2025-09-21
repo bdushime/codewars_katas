@@ -1,3 +1,14 @@
+Area of an arrow
+
+    function arrowArea(a, b) {
+  if (a <= 0 || b <= 0 || !Number.isInteger(a) || !Number.isInteger(b)) {
+    throw new Error("a and b must be positive integers");
+  }
+  return (1 / 4) * a * b;
+}
+
+
+
 
 Who ate the cookie??
 

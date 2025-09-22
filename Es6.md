@@ -1,3 +1,20 @@
+Pairs of integers from 0 to n
+
+ function generatePairs(n) {
+  
+   const result = [];
+
+    for (let a = 0; a <= n; a++) {
+        for (let b = a; b <= n; b++) {
+            result.push([a, b]);
+        }
+    }
+
+    return result;
+  
+}
+
+
 Who ate the cookie??
 
   function cookie(x){

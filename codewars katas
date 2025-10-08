@@ -1,6 +1,15 @@
 
 codewars katas:
 
+Calculate average
+  function findAverage(array) {
+  if(array.length === 0){
+    return 0;
+  }
+   let sum = array.reduce((acc,n)=>acc+n,0);
+  return (sum/array.length) ;
+}
+
 Square(n) Sum
      function squareSum(numbers){
    let num= numbers.map(n=>n*n);

@@ -1,6 +1,12 @@
 
 codewars katas:
 
+Square(n) Sum
+     function squareSum(numbers){
+   let num= numbers.map(n=>n*n);
+   return num.reduce((sum,n)=> n+sum,0);
+}
+
 Remove exclamation marks
 
   function removeExclamationMarks(s) {

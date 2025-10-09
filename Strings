@@ -1,4 +1,16 @@
 
+Detect Pangram
+
+function isPangram(string){
+ let str=string.toLowerCase();
+  return 'abcdefghijklmnopqrstuvwxyz'.split('').every(element=> str.includes(element));
+}
+
+
+
+
+
+
 Roman Numerals Encoder
 
 function solution(num) {

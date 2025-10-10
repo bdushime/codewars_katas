@@ -1,3 +1,13 @@
+Square(n) Sum
+
+  function squareSum(numbers){
+   let num= numbers.map(n=>n*n);
+   return num.reduce((sum,n)=> n+sum,0);
+}
+
+
+
+
 Pairs of integers from 0 to n
 
  function generatePairs(n) {

@@ -1,3 +1,26 @@
+
+Scrolling Text
+
+   function scrollingText(text){
+  text=text.toUpperCase();
+  
+  let rotations = [];
+  
+  for(let i=0; i < text.length ; i++){
+    let rotated = text.slice(i) + text.slice(0,i);
+    
+    rotations.push(rotated);
+  }
+  
+  return rotations
+}
+
+
+
+
+
+
+
 Square(n) Sum
 
   function squareSum(numbers){

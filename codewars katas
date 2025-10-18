@@ -1,6 +1,18 @@
 
 codewars katas:
 
+
+Descending Order
+function descendingOrder(n){
+   let st = String(n);
+   let arr= st.split('').sort((a,b)=>b-a);
+   
+  return Number(arr.join(''));
+
+}
+
+
+
 Calculate average
   function findAverage(array) {
   if(array.length === 0){

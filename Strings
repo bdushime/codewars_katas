@@ -7,6 +7,21 @@ function isPangram(string){
 }
 
 
+Shortest Word
+
+   function findShort(s){
+  
+  let str = s.split(' ');
+  
+  let str1 = str.map(e=>e.length);
+  
+  let sortedArr= str1.sort((a,b)=>a-b)
+  
+  return sortedArr[0];
+  
+  
+}
+
 
 
 

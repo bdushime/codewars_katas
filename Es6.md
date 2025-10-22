@@ -1,4 +1,25 @@
 
+Is every value in the array an array?
+
+const arrCheck = value => {
+let arr=''    
+  for(let i=0 ; i< value.length;i++){
+    if(Array.isArray(value[i])){
+     
+    arr += 'true';
+    }
+    else {
+        arr += 'false';
+    }
+  }
+  
+  return arr.includes('false') ? false : true;
+}
+
+
+
+
+
 Scrolling Text
 
    function scrollingText(text){

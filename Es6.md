@@ -1,3 +1,17 @@
+
+Find within array
+   function findInArray(array, iterator) {
+  for (let i = 0; i < array.length; i++) {
+    if (iterator(array[i], i)) {
+      return i; 
+    }
+  }
+  return -1; 
+}
+
+
+
+
 Make a square box!
    function box(n) {
   const result = []

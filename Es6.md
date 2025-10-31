@@ -1,3 +1,20 @@
+Make a square box!
+   function box(n) {
+  const result = []
+  const top = '-'.repeat(n)
+  const middle = '-' + ' '.repeat(n - 2) + '-'
+
+  result.push(top)
+  for (let i = 0; i < n - 2; i++) {
+    result.push(middle)
+  }
+  result.push(top)
+
+  return result
+}
+  
+
+
 
 Alternate capitalization
    function capitalize(s) {

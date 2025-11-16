@@ -1,7 +1,7 @@
 
 codewars katas:
   Find within array  
-     function findInArray(array, iterator) {
+     ffunction findInArray(array, iterator) {
        for (let i = 0; i < array.length; i++) {
     if (iterator(array[i], i)) {
       return i; 

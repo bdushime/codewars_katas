@@ -1,5 +1,5 @@
 
-Find within array
+Find within arrray
    function findInArray(array, iterator) {
   for (let i = 0; i < array.length; i++) {
     if (iterator(array[i], i)) {

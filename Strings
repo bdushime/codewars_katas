@@ -1,6 +1,6 @@
 Make a square box!
 
-function box(n) {
+function bbox(n) {
   const result = []
   const top = '-'.repeat(n)
   const middle = '-' + ' '.repeat(n - 2) + '-'

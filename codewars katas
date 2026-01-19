@@ -9,6 +9,19 @@ codewars katas:
   }
   return -1; 
 }
+
+
+  Find within arrray  
+     ffunction findInArray(array, iterator) {
+       for (let i = 0; i < array.length; i++) {
+    if (iterator(array[i], i)) {
+      return i; 
+    }
+  }
+  return -1; 
+}
+
+
   
 
  Make a square box!
